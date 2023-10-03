@@ -8,4 +8,4 @@ def rouge(predictions, references):
 def agg_rouge(items):
     rouge_fn = evaluate.load("rouge")
     predictions, references = zip(*items)
-    return rouge_fn.compute(predictions=predictions, references=references)["rouge1"]
+    return rouge_fn.compute(predictions=predictions, references=references, use_aggregator=True)["rouge1"]
