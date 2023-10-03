@@ -8,6 +8,30 @@ output_type: greedy_until
 doc_to_text: "summarize the following text: {{dialogue}}"
 doc_to_target: "{{summary}}"
 metric_list:
-  - metric: rouge
+  - metric: rouge1_max
+    aggregation: mean
+    higher_is_better: true
+  - metric: rouge1_acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: rouge1_diff
+    aggregation: mean
+    higher_is_better: true
+  - metric: rouge2_max
+    aggregation: mean
+    higher_is_better: true
+  - metric: rouge2_acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: rouge2_diff
+    aggregation: mean
+    higher_is_better: true
+  - metric: rougeL_max
+    aggregation: mean
+    higher_is_better: true
+  - metric: rougeL_acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: rougeL_diff
     aggregation: mean
     higher_is_better: true
