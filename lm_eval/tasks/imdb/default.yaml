@@ -3,7 +3,7 @@ dataset_path: imdb
 dataset_name: plain_text
 output_type: multiple_choice
 training_split: train
-validation_split: validation
+test_split: test
 doc_to_text: "{{text}}\nQuestion: Is this sentence positive or negative?\nAnswer:"
 doc_to_target: label
 doc_to_choice: ["neg", "pos"]
