@@ -6,6 +6,6 @@ training_split: train
 validation_split: validation
 doc_to_text: "{{text}}\nQuestion: Is this sentence positive or negative?\nAnswer:"
 doc_to_target: label
-doc_to_choice: ["neg", "pos"]
+doc_to_choice: ["negative", "positive"]
 metric_list:
   - metric: acc
