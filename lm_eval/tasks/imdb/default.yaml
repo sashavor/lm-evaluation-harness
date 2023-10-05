@@ -1,6 +1,6 @@
 task: imdb
 dataset_path: imdb
-dataset_name: imdb
+dataset_name: plain_text
 output_type: multiple_choice
 training_split: train
 validation_split: validation
