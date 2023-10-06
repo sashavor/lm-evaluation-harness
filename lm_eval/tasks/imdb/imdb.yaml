@@ -4,7 +4,7 @@ dataset_name: plain_text
 output_type: multiple_choice
 training_split: train
 test_split: test
-doc_to_text: "Is this sentence positive or negative?\n{{text}}\nAnswer:"
+doc_to_text: "Is this sentence positive or negative?\n{{text}}"
 doc_to_target: label
 doc_to_choice: ['negative', 'positive']
 metric_list:
