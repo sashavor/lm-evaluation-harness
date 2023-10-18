@@ -11,9 +11,9 @@ doc_to_choice: "{{[distractor1, distractor2, distractor3, correct_answer]}}"
 should_decontaminate: true
 doc_to_decontamination_query: "{{support}} {{question}}"
 metric_list:
-  - metric: acc
+  - metric: !function utils.exact
     aggregation: mean
     higher_is_better: true
-  - metric: acc_norm
+  - metric: !function utils.f1
     aggregation: mean
     higher_is_better: true
