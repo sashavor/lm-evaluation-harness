@@ -5,8 +5,8 @@ training_split: train
 test_split: test
 validation_split: validation
 output_type: greedy_until
-doc_to_text: "summarize the following text: {{document}}"
-doc_to_target: "{{summary}}"
+doc_to_text: "summarize the following text: {{article}}"
+doc_to_target: "{{highlights}}"
 metric_list:
   - metric: !function metrics.rouge
     aggregation: !function metrics.agg_rouge
